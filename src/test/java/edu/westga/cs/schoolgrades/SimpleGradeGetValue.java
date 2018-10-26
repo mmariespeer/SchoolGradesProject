@@ -1,3 +1,4 @@
+package edu.westga.cs.schoolgrades;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import edu.westga.cs.schoolgrades.SimpleGrade;
