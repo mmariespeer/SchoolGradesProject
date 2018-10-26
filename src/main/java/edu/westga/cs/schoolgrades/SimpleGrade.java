@@ -4,16 +4,11 @@ public class SimpleGrade implements Grade {
 
 	private double aSingleGrade;
 	
-	public SimpleGrade(String aGrade) {
-		try  
-		  {  
-			this.aSingleGrade = Double.parseDouble(aGrade);  
-		  }  
-		  catch(NumberFormatException nfe)  
-		  {  
-		   
-		  }  
-		
+	public SimpleGrade(double aGrade) {
+		if(aGrade < 0) {
+			throw new IllegalArgumentException("Grade cannot be negative");
+		}
+		this.aSingleGrade = aGrade; 
 	}
 	
 	@Override
