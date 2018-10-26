@@ -26,6 +26,20 @@ public class CompositeGrade implements Grade {
 
 	@Override
 	public double getValue() {
-		return 0;
+		if (this.theStrategy.getStrategyName() == "SUM") {
+			double total = 0;
+			for (Grade singleGrade: this.gradeList) {
+				total += singleGrade.getValue();
+			}
+			return total;
+		} else if (this.theStrategy.getStrategyName() == "AVERAGE") {
+			double total = 0;
+			for (Grade singleGrade: this.gradeList) {
+				total += singleGrade.getValue();
+			}
+			return total/this.gradeList.size();
+		} else {
+			return 0;
+		}
 	} 
 }
