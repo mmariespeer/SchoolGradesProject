@@ -19,6 +19,10 @@ public class CompositeGrade implements Grade {
 	public ArrayList<Grade> getCompositeGradeList() {
 		return this.gradeList;
 	}
+	
+	public Strategy getStrategy() {
+		return this.theStrategy;
+	}
 
 	@Override
 	public double getValue() {
