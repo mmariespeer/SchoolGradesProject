@@ -4,8 +4,16 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Test compositeGrade with average strategy
+ * @author Melissa Speer Osborne
+ * @version 10/25/2018
+ */
 public class TestCompositeGradeAverageStrategy {
 
+	/**
+	 * add one grade with average strategy
+	 */
 	@Test
 	public void testCompositeGradeAdd1GradeAverage() {
 		Average theAverageStrategy = new Average();
@@ -15,6 +23,9 @@ public class TestCompositeGradeAverageStrategy {
 		assertEquals(75, theGradeList.getValue(), 75);
 	}
 	
+	/**
+	 * add multiple grades with average strategy
+	 */
 	@Test
 	public void testCompositeGradeAddMultipleGradesAverage() {
 		Average theAverageStrategy = new Average();
@@ -30,6 +41,9 @@ public class TestCompositeGradeAverageStrategy {
 		assertEquals(87.5, theGradeList.getValue(), 0);
 	}
 	
+	/**
+	 * add multiple grades with average strategy with a zero
+	 */
 	@Test
 	public void testCompositeGradeAddMultipleGradesWithZeroAverage() {
 		Average theAverageStrategy = new Average();

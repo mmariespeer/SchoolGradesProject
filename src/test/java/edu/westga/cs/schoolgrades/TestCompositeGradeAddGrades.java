@@ -4,8 +4,16 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * Add grades to composite list
+ * @author Melissa Speer Osborne
+ * @version 10/25/2018
+ */
 public class TestCompositeGradeAddGrades {
 
+	/**
+	 * Add a single grade
+	 */
 	@Test
 	public void testCompositeGradeAddGrade() {
 		Sum theSumStrategy = new Sum();
@@ -16,6 +24,9 @@ public class TestCompositeGradeAddGrades {
 		assertEquals(75.0, theGradeList.getCompositeGradeList().get(0).getValue(), 0);
 	}
 	
+	/**
+	 * Add multiple grades
+	 */
 	@Test
 	public void testCompositeGradeAddMultipleGrades() {
 		Sum theSumStrategy = new Sum();

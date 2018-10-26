@@ -2,6 +2,7 @@ package edu.westga.cs.schoolgrades;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import edu.westga.cs.schoolgrades.SimpleGrade;
+
 /**
  * Test class for SimpleGrade constructor and getValue() method.
  * @author Melissa Speer Osborne
@@ -50,7 +51,7 @@ public class SimpleGradeGetValue {
 	 */
 	@Test(expected = IllegalArgumentException.class)
 	public void testCreateSimpleGradeNegative() {
-			new SimpleGrade(-8);
+		new SimpleGrade(-8);
 	}
 	
 }
